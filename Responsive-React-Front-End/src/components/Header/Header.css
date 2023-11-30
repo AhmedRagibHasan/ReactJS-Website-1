@@ -1,0 +1,107 @@
+header {
+    min-height: 100vh;
+    background-image: url(../../assets/HeroBackground.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+header .wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+header .cta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+    border-radius: 20px 20px 0px 0px;
+    border-top: 4px solid #FFF;
+
+    border-right: 4px solid #FFF;
+ 
+    border-left: 4px solid #FFF;
+
+    background: rgba(0, 0, 0, 0.50);
+
+    backdrop-filter: blur(25px);
+    padding: 50px 40px ;
+
+}
+
+header .cta .course-name {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    position: relative;
+
+}
+
+
+header .cta .course-name::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--red-color);
+    left: 0;
+    bottom: -10px;
+
+
+    
+}
+
+
+
+header .cta h1{
+    color: #FFF;
+
+    font-family: Alegreya;
+    font-size: 40px;
+    
+    font-weight: 700;
+    line-height: 140%;
+
+}
+
+
+header .cta .demo-btn{
+    display: inline-flex;
+    padding: 10px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E63946;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+
+}
+
+
+/* Tablet Responsive */
+
+@media (max-width: 1040px) {
+    header .cta {
+      width: 356px;
+    }
+  }
+  
+  /* Smartphone Responsive */
+  
+  @media (max-width: 720px) {
+    header .cta {
+      width: unset;
+      right: 32px;
+      left: 32px;
+    }
+  
+    header .cta h1 {
+      font-size: 32px;
+    }
+  }
